@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>input 태그들</title>
+</head>
+<body>
+
+	<form action="order.jsp">
+		<fieldset>
+			<legend>필수 입력 사항</legend>
+			<label>아이디</label><input type="text" name="id"><br> <label>비밀번호</label><input
+				type="password" name="pwd"><br> <label>웹주소</label><input
+				type="url" name="url">http:/로 시작하는지 확인 <br> <label>이메일</label><input
+				type="email" name="email">골뱅이체크<br> <label>전화번호</label><input
+				type="tel" name="tel"><br> 
+		<label>선물용 3kg</label>
+		 <input type="checkbox" name="gubun" value="g_3kg" checked><br> 
+		<label>선물용 5kg</label>
+			 <input type="checkbox" name="gubun" value="g_5kg"><br>
+		<label>가정용3kg
+			 <input type="checkbox" name="gubun" value="f_3kg"></label> <br>
+		<label>가정용 5kg</label>
+		 <input type="checkbox" name="gubun" value="f_5kg"><br>
+		 
+		<p>포장여부</p>
+		<input type="radio" name="pack" value="yes" checked>선물 포장 
+
+		<input type="radio" name="pack" value="no">안함 <br> 
+		</fieldset>
+		<input type="submit" value="확인">
+	</form>
+
+
+
+
+
+
+
+</body>
+</html>
