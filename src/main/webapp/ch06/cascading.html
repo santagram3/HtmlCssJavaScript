@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>타입 선택자(태그)</title>
+
+<style type="text/css">
+
+	p{
+		color:black;
+	}
+	/*우선순위 가장 높이 처리 !important*/
+	h1{
+		color:brown !important;
+	}
+	/*동일 우선순위 동일 중요 */
+	p{
+	
+		color:blue;
+	}
+
+
+</style>
+
+</head>
+<body>
+
+	<div >
+		<h1 style="color:green;">레드향</h1>
+		<p style="color:red;">
+			껍질에 어쩌구 저쩌구 <span >레드향</span> 저쩌구
+		</p>
+		<p>
+			향이 <span>한라봉</span> 어쩌구 저쩌구
+		</p>
+		<p>영양소가 어쩌구 어쩌구 저쩌구 저쩌구</p>
+	</div>
+
+
+
+
+</body>
+</html>
