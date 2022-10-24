@@ -2,15 +2,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>박스모델</title>
+<title>box -shadows</title>
 <style>
-div{margin-bottom: 20px;}
+div{margin-bottom: 20px; border-radius: 10px;}
 .box1{ width: 200px; height: 100px; padding: 20px; 
-      border:20px solid #ccc;}
+      border:1px solid #ccc;
+       box-shadow: 2px -2px 5px 0px;
+      }
       /* 200 */
 .box2{width: 200px; height: 100px;padding: 20px; 
-      border: 20px solid #00f;
-      box-sizing: border-box;}
+      border: 1px solid #00f;
+      box-sizing: border-box;
+      box-shadow: 5px 5px 15px 5px blue;}
       /* 200= x + 40 +20 */
 </style>
 </head>
