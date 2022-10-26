@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var numberOne = 15;
+        var numberTwo = 2;
+        alert(numberOne/numberTwo); /*실수로 출력 7.5*/ 
+        alert(numberOne%numberTwo); // 나머지 연산 1 
+
+
+        var birthyear = prompt("태어난 연도를 입력하세요");
+        var thisYear = new Date().getFullYear();
+        alert(typeof(thisYear))
+        alert("birthyear == thisYear : "+(birthyear == thisYear)); // 둘다 문자열로 받음 // true 
+        alert("birthyear == 2022 : "+(birthyear == 2022)); // 문자열 == 숫자 비교 // true
+
+        alert("birthyear === thisYear : "+(birthyear === thisYear)); // 둘다 문자열로 받음 // false
+        alert("birthyear === 2022 : "+(birthyear === 2022)); // 문자열 == 숫자 비교 // false 
+
+        alert(thisYear);// 입력값 string 
+        alert(typeof(thisYear));
+        alert(thisYear-birthyear); //연산시 자동형변환 
+    </script>
+
+
+
+</body>
+</html>
