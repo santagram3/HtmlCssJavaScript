@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제 2</title>
+</head>
+
+<body>
+	<script>
+		// 조건1 
+		var num1 = prompt("비교할 첫 번째 숫자를 입력하세요");
+		var num2 = prompt("비교할 두 번째 숫자를 입력하세요");
+		 
+		function tt(num1, num2) { // 조건 2 
+			var x1 = parseInt(num1);
+			var y1 = parseInt(num2);
+			
+			if (x1 === y1) {  // 조건 3 
+				alert("x : "+x1+" y : "+y1+" 은 서로 같습니다."); // 조건 4 
+				
+			}else if(x1 > y1) {
+				alert("x : "+x1+" y : "+y1+" x가 y보다 큽니다.");
+				
+			}else {
+				alert("x : "+x1+" y : "+y1+" y가 x보다 큽니다.");
+				
+			}
+		}
+		tt(num1, num2);
+	</script>
+
+
+</body>
+
+</html>

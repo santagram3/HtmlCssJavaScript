@@ -6,9 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
 <style>
-
-
-
 </style>
 </head>
 <body>
@@ -18,18 +15,23 @@
 		var count = 0;
 		if (num !== null) {
 			document.write("<p>")
+				//3. 반복문을 이용해 ~ 
             for (let i = 1; i <= num; i++) {
+				// 4. 나머지 확인 
 				if(i%3===0){
 					document.write(i + ", ");
+					// 5. 카운터 갯수 더하기 
 					count++;
 				}
 			}
+			// 조건 2 취소를 누르면 결과를 보여주지 않습니다. 
+			document.write("</p>")
+			document.write("<br>")
+			document.write("<p>")
+				// 카운터 갯수 표시하기 
+			document.write(num+"까지 3의 배수의 개수 : " +count)
 			document.write("</p>")
 		} 
-		document.write("<br>")
-		document.write("<p>")
-		document.write(num+"까지 3의 배수의 개수 : " +count)
-		document.write("</p>")
 		
 	</script>
 </body>
