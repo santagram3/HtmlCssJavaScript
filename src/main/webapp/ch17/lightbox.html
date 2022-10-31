@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>라이트박스</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+  </head>
+  <body>
+    <div class="row">
+      <ul>
+        <li><img src="images/tree-1-thumb.jpg" data-src="images/tree-1.jpg" class="pic"></li>
+        <li><img src="images/tree-2-thumb.jpg" data-src="images/tree-2.jpg" class="pic"></li>
+        <li><img src="images/tree-3-thumb.jpg" data-src="images/tree-3.jpg" class="pic"></li> 
+        <li><img src="images/tree-4-thumb.jpg" data-src="images/tree-4.jpg" class="pic"></li>
+        <li><img src="images/tree-5-thumb.jpg" data-src="images/tree-5.jpg" class="pic"></li>
+        <li><img src="images/tree-6-thumb.jpg" data-src="images/tree-6.jpg" class="pic"></li>          
+      </ul>    
+    </div>
+    <div id="lightbox">
+			<img src="images/tree-1.jpg" alt="" id="lightboxImage">			
+    </div>
+
+
+    <script>
+      var div = document.querySelector("#lightbox"); // 이거 블록처리할꺼고요 
+      var imgbox = document.querySelector("#lightboxImage"); // 큰사진 
+      var imageList = document.querySelectorAll(".pic"); // 사진마다 이벤트 거는중이구요 
+      for (let i = 0; i < imageList.length; i++) {
+          imageList[i].addEventListener("click",function () {
+            // 이미지중 하나라도 클릭하면 ? 
+            div.style.display = "block";
+            // 블록으로 바꾸고요 
+            imgbox.src = this.src;
+            // 이미지 사진 누른놈으로 바꾸고요 
+            div.style.backgroundColor= "rgba(0,0,0,0.7)";
+            
+          })
+      }
+      imgbox.onclick = function() {  //click 이벤트가 발생했을 때 실행할 함수 선언
+				div.style.display = "none";  // lightbox 요소를 화면에서 감춤
+        div.style.backgroundColor= "transparent";
+        
+      }
+        
+
+    </script>
+
+
+  </body>
+</html>
